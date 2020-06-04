@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="./style.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro&display=swap" rel="stylesheet">
+<!--Font Awesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="logo">
+      <div class="first">
+        <img src="./piz-logo.jpg" alt="">
+      </div>
+      <div class="second">
+        <h1>Pizza Mizza</h1>
+        <h4>The Best Pizza!</h4>
+      </div>
+    </div>
+
+    <!-- PART ONE -->
+
+    <div class="container" id="cont-1">
+      <div class="cont">
+        <h1>Order Our Pizza</h1>
+        <hr>
+      </div>
+      <form action="" id="form">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">First name</label>
+            <input type="text" name="userName" class="form-control" id="firstName1" value="" placeholder="Sardor">
+            <p>Username must be alphanumeric and contain 5 - 12 characters</p>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip02">Last name</label>
+            <input type="text" name="userLast" class="form-control" id="lastName1" value="" placeholder="Ziyoev">
+            <p>Username must be alphanumeric and contain 5 - 12 characters</p>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <!-- Example split danger button -->
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Address Type: </label>
+          <select class="form-control" name="Address Type" id="addressType1">
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="office">Office</option>
+            <option value="condo">Condo</option>
+            <option value="other">Other</option>
+          </select><br>
+          <!-- <div id="otherAddress">
+            <label class='formLabels' for="deliveryAddressKind">What kind of Address?</label><br>
+            <input type="text" id="deliveryKind" /><br>
+          </div> -->
+        </div><br>
+    
+      <!-- ADDRESS FORM  EXAMPLE-->
+
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" name="Address" class="form-control" id="street1" placeholder="1234 Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">APT / UNIT</label>
+        <input type="text" name="Apartment Number" class="form-control" id="apartment1" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="city" class="form-control" id="city1">
+          <p>City must be alphanumeric</p>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <input type="text" name="state" class="form-control" id="state1">
+          <p>State must be correct</p>
+        </div>
+        <div class="form-group col-md-2" id="zipDiv">
+          <label for="inputZip">Zip</label>
+          <input type="text" name="zip" class="form-control zip" id="zip1">
+          <p>Zip Code must be 5 numbers</p>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" name="email" class="form-control" id="inputEmail4">
+          <p>Email must be a valid address, e.g me@mydom.com</p>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Phone</label>
+          <input type="text" name="telephone" class="form-control">
+          <p>Phone number must be 11 numbers</p>
+        </div>
+      </div>
+      <button id="next-1" type="submit" class="btn btn-primary">Next</button>
+
+      </form>
+
+      <hr>
+    </div>
+
+    <!-- PART TWO -->
+
+    <div class="cont-2" id="cont-2">
+      <h2 class="cont">Build Your Pizza</h2>
+      <hr>
+      <form action="" id="form-2">
+        <div class="row">
+          <div class="col-md-9 mb-2">
+            <p>Select dough:</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Hand-Tossed</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Thin Crust</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">New York Style</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Gluten Free</label>
+            </div>
+          </div>
+
+          
+         
+          <div class="form-row">
+            
+            <div class="form-group col-md-3">
+              <label for="inputState">Select Size</label>
+              <select id="inputState" class="form-control">
+                <option disabled selected>Choose...</option>
+                <div id="drophnd">
+                  <option value="9.99" id="">Hand-Tossed: Small - $9.99</option>
+                  <option value="12.99" id="">Hand-Tossed: Medium - $12.99</option>
+                  <option value="14.99" id="">Hand-Tossed: Large - $14.99</option>
+                 </div>
+                 <div id="dropthin">
+                  <option value="11.99" id="">Thin Crust: Medium - $11.99</option>
+                  <option value="13.99" id="">Thin Crust: Large - $13.99</option>
+                 </div>
+                 <div id="dropny">    
+                  <option value="16.99" id="">NY Style: Large - $16.99</option>
+                  <option value="19.99" id="">NY Style: Extra Large - $19.99</option>
+                 </div>
+                 <div id="dropglu">
+                  <option value="10.99" id="">Gluten Free: Small - $10.99</option>
+                 </div>
+              </select>
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="inputState">Select Cheese</label>
+              <select id="inputState" class="form-control">
+                <div id="myCheese" class="dropdown-content">
+                  <option id="light" value="0.00">Light: No charge</option>
+                  <option id="normal" value="0.00" selected>Normal: No charge</option>
+                  <option id="extrat" value="2.99">Extra: +$2.99</option>
+                  <option id="double" value="3.99">Double: +$3.99</option>
+                  </div>
+              </select>
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="inputState">Select Souce</label>
+              <select id="inputState" class="form-control">
+                <div id="mySouce" class="dropdown-content">
+                  <option id="regular" value="0.00" selected>Regular Tomato: No charge</option>
+                  <option id="hearty" value="0.99">Hearty Tomato: +$0.99</option>
+                  <option id="bbq" value="1.99">BBQ Sauce: +$1.99</option>
+                  </div>
+              </select>
+              <div class="total" id="total1">
+                Total:
+                <p id="total2"></p>
+              </div>
+            </div>
+            
+            
+            <div class="row mid">
+              <div class="col-md-9">
+                <p>Select Topings Just $0.99 For Each!</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox1">Tomato</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox2">Sausage</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Bacon</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Beef</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Chickens</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Ham</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Pineapples</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Mushrooms</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Jalapenos</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Olives</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Peppers</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="0.99">
+                  <label class="form-check-label" for="inlineCheckbox3">Pepperoni</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 mb-2 col text-center" style="margin: 40px auto; ">
+              <button id="finish" class="btn btn-primary btn-md btn-submit" type="submit">Finish Building</button> <hr>
+            </div>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <!-- PART THREE -->
+
+    <div id="cont-3" class="billing card">
+      <form action="" id="form2">
+        <h2 class="cont">Billing Information</h2> <hr>
+      <div class="custom-control">
+        <input type="checkbox" id="sameAddress" name="billingtoo" onChange="pullInfo()">
+        <label for="custom-control">Same Address as Above</label>
+      </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">First name</label>
+            <input type="text" name="billName" class="form-control" id="firstName2" value="" placeholder="Sardor">
+            <p>Username must be alphanumeric and contain 5 - 12 characters</p>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip02">Last name</label>
+            <input type="text" name="userLast" class="form-control" id="lastName2" value="" placeholder="Ziyoev">
+            <p>Username must be alphanumeric and contain 5 - 12 characters</p>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <!-- Example split danger button -->
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Address Type: </label>
+          <select class="form-control" id="addressType2">
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Office</option>
+            <option>Condo</option>
+            <option>Other</option>
+          </select>
+        </div><br>
+    
+      <!-- ADDRESS FORM  EXAMPLE-->
+
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="street2" placeholder="1234 Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">APT / UNIT</label>
+        <input type="text" class="form-control" id="apartment2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="city" class="form-control" id="city2">
+          <p>City must be alphanumeric</p>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputCity">State</label>
+          <input type="text" name="state" class="form-control" id="state2">
+          <p>State must be correct</p>
+        </div>
+        <div class="form-group col-md-2" id="zipDiv">
+          <label for="inputZip">Zip</label>
+          <input type="text" name="zip" class="form-control" id="zip2">
+          <p>Zip Code must be 5 numbers</p>
+        </div>
+      </div>
+      <hr>
+      <div id="Card">
+        <h2 class="cont">Card Information</h2>
+        
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip01">Name on the card</label>
+          <input type="text" name="card" class="form-control" id="validationTooltip01" value="" placeholder="Sardor Ziyoev">
+          <p>Name on the card must be at least 5 characters</p>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="icons">
+            <i class="fa fa-cc-visa fa-2x" style="color:navy;"></i>
+            <i class="fa fa-cc-amex fa-2x" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard fa-2x" style="color:red;"></i>
+          </div>
+          <label for="validationTooltip02">Card Number</label>
+          
+          <input type="text" name="cardNumber" class="form-control" id="validationTooltip02" value="" placeholder="1111-2222-3333-4444">
+          <p>Card Number must be 16 numbers and valid</p>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        
+        <div class="form-group col-md-3">
+          <label for="inputState">Month</label>
+          <select id="inputState" class="form-control">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputState">Year</label>
+          <select id="inputState" class="form-control">
+            <option selected>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">CVV</label>
+          <input type="text" name="cvv" class="form-control" id="inputCity" placeholder="456">
+          <p>CVV must be 3 numeric characters</p>
+        </div>
+
+      </div>
+      <div class="col-md-9 mb-2 col text-center" style="margin: 40px auto; ">
+        <button id="place" type="submit" class="btn btn-primary">Place Order</button>
+      </div>
+
+     
+      </form>
+
+
+      <hr>
+    </div>
+    
+    <div id="last-btn">
+      <div id="last_form">
+          <div id="pop">
+              <h2>Are you sure?</h2>
+              <button id="yes-btn">yes</button>
+              <button id="no-btn">no</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="last cont-4">
+      <h2>Congratulations Your Pizza On It's Way</h2>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

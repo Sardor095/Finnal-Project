@@ -1,0 +1,113 @@
+body{
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    padding:0;
+    background-image: url("./pizaa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.logo {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    color: #3498db;
+}
+.logo img   {
+    width: 300px;
+    height: 300px;
+}
+
+.first,.second {
+    float: left;
+}
+.second {
+    padding: 80px;
+}
+
+.cont {
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 700px;
+    height: 800px;
+    opacity: 0.7;
+}
+.cont-2 {
+    background-color: #fff;
+    width: 700px;
+    height: 550px;
+    opacity: 0.7;
+    margin: 20px auto;
+    padding-left: 16px;
+}
+.cont-4 {
+    background-color: #fff;
+    width: 700px;
+    height: 300px;
+    opacity: 0.7;
+    margin: 20px auto;
+}
+
+#pop {
+    color: #fff;
+}
+.billing {
+    background-color: #fff;
+    width: 700px;
+    height: 1040px;
+    opacity: 0.7;
+    margin: 20px auto;
+    padding:10px 16px 10px 16px;
+}
+.mid{
+    padding-left: 20px;
+}
+
+input{
+    color: #000;
+    font-weight: 400;
+}
+
+input.valid{
+    border-color: #36cc36;
+}
+
+input.invalid{
+    border-color: orange;
+}
+
+input + p{
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 30px;
+}
+input.invalid + P{
+    opacity: 1;
+}
+#zipDiv input{
+    width: 75px;
+    height: 40px;
+}
+
+.icons{
+    float: right;
+}
+.total{
+    background:#18dcff;
+    float: right;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+
+}
